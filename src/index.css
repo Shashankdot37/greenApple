@@ -1,13 +1,281 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgb(248, 215, 172);
+  background: linear-gradient(135deg, #013220, #004d1a);
+  font-size: large;
+}
+
+#logoName
+{
+  font-weight: lighter;
+  color:rgb(248, 215, 172) ;
+  margin-right: 40px;
+}
+
+h1
+{
+  text-decoration: underline;
+}
+
+
+#intro-learnMore
+{
+  font-weight: lighter;
+  border: 1px solid rgb(110, 69, 30);
+  border-radius: 27px;
+  margin-left: 26px;
+  margin-top: 3px;
+  background-color: rgba(202, 152, 105,0.6);
+  padding: 7px;
+  margin-top: 11px;
+}
+
+#intro-learnMore:hover
+{
+  font-weight: lighter;
+  border: 1px solid rgb(110, 69, 30);
+  border-radius: 27px;
+  margin-left: 26px;
+  margin-top: 3px;
+  background-color: rgba(202, 152, 105,0.8);
+  padding: 7px;
+  margin-top: 11px;
+  cursor: pointer;
+}
+
+.carousel-container
+{
+  border: 1px solid rgb(248, 215, 172);
+  max-width: 600px;
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(135deg, #012216, #007025);
+}
+
+
+#intro
+{
+  width: 70%;
+  height: 40%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 18%;
+  margin-top: 100px;
+  border: 1px solid rgb(248, 215, 172);
+  padding: 29px;
+  background: linear-gradient(135deg, #012216, #007025);
+}
+
+#navBar
+{
+  margin-bottom: 10px;
+}
+.carousel-item img
+{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-item
+{
+  height: 60vh;
+  object-fit: cover;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar, .navbar-nav .nav-link, .navbar-brand {
+  color: white; 
+}
+
+.navbar-nav .nav-link.active {
+  color: #d4d4d4;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-family: 'Charm', serif;
+}
+
+.navbar-brand:hover {
+  font-weight: bold;
+  font-family: 'Charm', serif;
+  color: #b8ffb8;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #b8ffb8; 
+}
+
+.navbar, .navbar-expand-lg
+{
+  
+  background-color: rgba(14, 54, 14,0.4);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#home-logo
+{
+  height: 44px;
+  width: 44px;
+  margin-right: 10px;
+}
+
+#order-nav-btn
+{
+  font-weight: bolder;
+  border: 2px solid rgb(110, 69, 30);
+  border-radius: 27px;
+  padding: 7px;
+  margin-left: 26px;
+  margin-top: 3px;
+  background-color: rgba(202, 152, 105,0.6);
+  color: black;
+}
+
+#order-nav-btn:hover
+{
+  font-weight: bolder;
+  border: 2px solid rgb(110, 69, 30);
+  border-radius: 27px;
+  margin-left: 26px;
+  margin-top: 3px;
+  background-color: rgba(202, 152, 105,0.8);
+  color:rgb(0, 0, 0);
+  padding: 7px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+
+#featuredMenu
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 15vh;
+  margin-bottom: 50px;
+}
+
+.carousel-item img
+{
+  filter: brightness(50%);
+  object-fit: cover;
+}
+
+#featuredDishh1
+{
+  margin: 14px;
+  text-decoration: underline;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  color: rgb(248, 215, 172) !important;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  border-radius: 0;
+}
+
+#menuContainer
+{
+  margin-left: 31vw;
+}
+
+/* -------------------------------------------------- */
+.banner-section
+{
+  margin-top: 4vh;
+}
+
+.card-img
+{
+  opacity: 0.7;
+  height: 60vh; 
+  object-fit:cover;
+  filter: brightness(50%);
+}
+
+.card-title
+{
+  font-size: 70px;
+}
+
+#missionText
+{
+  width: 50%;
+  text-align: center;
+}
+
+#history
+{
+  margin-top: 10vh;
+}
+
+.img-fluid
+{
+   border: 3px solid rgb(248, 215, 172);
+}
+
+
+/* --------------- */
+
+#OurValues
+{
+  margin-top: 10vh;
+}
+
+.card-title
+{
+  font-size: 36px;
+}
+.card-body
+{
+  background-color:rgba(9, 56, 9, 0.8);
+  color: rgb(248, 215, 172);
+}
+.card-text
+{
+  width: 100%;
+}
+/* ----------------------- */
+#OurLocation
+{
+  background-color:linear-gradient(135deg, #013220, #004d1a);
+  display: flex;
+  align-items: center;
+}
+
+#LocationIntro
+{
+  margin-left: 5vw;
+}
+
+#Map
+{
+  margin-top: 5vh;
+}
+
+iframe
+{
+  border: 0;
 }

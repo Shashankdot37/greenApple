@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import NavBar from "./NavBar";
+import Banner from "./Banner";
+import IntroHome from "./IntroHome";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Menu from "./Menu";
+import Location from "./Location";
+import AboutUs from "./AboutUs";
+import { useLocation } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <div id="navBar">
+          <NavBar />
+          <Content />
+        </div>
+        <Routes>
+          <Route path="/" element={null} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/menu" element={<Menu />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+function Content() {
+  const location = useLocation();
+  return (
+    <>
+      {location.pathname === "/" && (
+        <>
+          <div id="banner">
+            <Banner />
+          </div>
+          <div id="intro">
+            <IntroHome />
+          </div>
+          <div id="featuredMenu">
+            <Menu />
+          </div>
+        </>
+      )}
+    </>
   );
 }
 
